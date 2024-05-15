@@ -32,11 +32,11 @@ export const options = {
     responsive: true,
     plugins: {
         legend: {
-        position: 'top',
+            position: 'top',
         },
         title: {
-        display: true,
-        text: 'Areas Chart',
+            display: true,
+            text: 'Areas Chart',
         },
     },
 };

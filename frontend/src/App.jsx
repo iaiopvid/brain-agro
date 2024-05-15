@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import Home from "./pages/Home";
 import AreaChart from "./pages/AreaChart";
+import AreaEstadoChart from "./pages/AreaEstadoChart";
+import AreaCulturaChart from "./pages/AreaCulturaChart";
 
 const App = () => {
   return (
@@ -23,11 +25,43 @@ const App = () => {
             width: "80%",
             display: "flex",
             justifyContent: "center",
-            flexDirection: "column",
+            flexDirection: "row",
             alignItems: "center",
           }}
         >
-          <AreaChart />
+          <Box
+            sx={{
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <AreaChart />
+          </Box>
+          <Box
+            sx={{
+              width: "25%",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <AreaEstadoChart />
+          </Box>
+          <Box
+            sx={{
+              width: "25%",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <AreaCulturaChart />
+          </Box>
         </Box>
       </Box>
       <Home />
