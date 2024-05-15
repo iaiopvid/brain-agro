@@ -14,7 +14,7 @@ const url_api = process.env.URL_API;
 export const fetchProducer = createAsyncThunk(
   "producer/fetchProducer",
   async () => {
-    const response = await axios.get(`${url_api}/produtor-rual`);
+    const response = await axios.get(`${url_api}/produtor-rural`);
     return response.data.response;
   }
 );
@@ -22,7 +22,7 @@ export const fetchProducer = createAsyncThunk(
 export const addProducer = createAsyncThunk(
   "producer/addProducer",
   async (data) => {
-    const response = await axios.post(`${url_api}/produtor-rual`, {
+    const response = await axios.post(`${url_api}/produtor-rural`, {
       nome: data.nome,
       cidade: data.cidade,
       estado: data.estado,
@@ -41,7 +41,7 @@ export const removeProducer = createAsyncThunk(
   "producer/removeProducer",
   async (data) => {
     const response = await axios.delete(
-      `${url_api}/produtor-rual/${data}`
+      `${url_api}/produtor-rural/${data}`
     );
     return response.data.id;
   }
@@ -51,7 +51,7 @@ export const modifiedProducer = createAsyncThunk(
   "producer/modifiedProducer",
   async (data) => {
     const response = await axios.put(
-      `${url_api}/produtor-rual/${data.id}`,
+      `${url_api}/produtor-rural/${data.id}`,
       {
         nome: data.nome,
         cidade: data.cidade,

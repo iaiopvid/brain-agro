@@ -14,7 +14,7 @@ const url_api = process.env.URL_API;
 export const fetchArea = createAsyncThunk(
   "area/fetchArea",
   async () => {
-    const response = await axios.get(`${url_api}/produtor-rual`);
+    const response = await axios.get(`${url_api}/produtor-rural`);
     return response.data.response;
   }
 );
