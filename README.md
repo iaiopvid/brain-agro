@@ -23,11 +23,9 @@ Para baixar as dependências do projeto apenas rode o comando:
     $ docker-compose up -d
 
 **Local** : Para iniciar o app localmente, seguir os passos:
-  - Adicionar um banco de dados local PostgreSQL com os parametros definidos em ormconfig.json
-  - Alterar no arquivo ormconfig.json o valor do atributo host para "localhost"
-  - Executar o seguinte comando
-  - Para iniciar o app utilizando docker, utilizar o comando:
-    $ npm run start
+  - Configure o arquivo ormconfig.json com os parêmetros adequados de acesso do banco dados PostgreSQL local ou dockerizado
+  - Executar o seguinte comando conforme configurado no arquivo package.json
+    `$ npm run start` ou `$ npm run dev`
 
 ## Testes Unitários 
 
