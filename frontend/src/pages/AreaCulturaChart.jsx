@@ -1,6 +1,7 @@
-import React from 'react';
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Box } from "@mui/material";
+
 import {
     fetchAreaCultura,
     changeStateTrue,
@@ -66,6 +67,8 @@ export default function AreaCulturaChart() {
     }, [dispatch, handleAreaCulturaChart]);
 
     return (
-        <Pie options={options} data={dataLabels} />
+        <Box>
+            <Pie options={options} data={dataLabels} />
+        </Box>
     );
 }
